@@ -42,11 +42,11 @@
  */
 
 require('dotenv').config();
-const { MNEMONIC, API_KEY } = process.env;
+
 //quotation is needed. if give in the .env then no need to give here.
 //but if not given in .env, then need to declare like this:
-// const mnemonic = process.env["mnemonic"];
-// const api_key = process.env["api_key"];
+const MNEMONIC = process.env["mnemonic"];
+const API_KEY = process.env["api_key"];
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
