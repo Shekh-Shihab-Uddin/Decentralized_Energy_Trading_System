@@ -21,7 +21,8 @@ const Navigation = ({ account }) => {
 
           <Link className="nav-link"
             onClick={async () => {
-                const response = await fetch("http://localhost:3000/api/agent-verification", {
+                // const response = await fetch("http://localhost:3000/api/agent-verification", {
+                const response = await fetch("https://energy-dapp.onrender.com/api/agent-verification", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -46,7 +47,8 @@ const Navigation = ({ account }) => {
           <li>
             <Link className="nav-link" 
                 onClick={async () => {
-                const response = await fetch("http://localhost:3000/api/producer-verification", {
+                // const response = await fetch("http://localhost:3000/api/producer-verification", {
+                const response = await fetch("https://energy-dapp.onrender.com/api/producer-verification", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -71,7 +73,8 @@ const Navigation = ({ account }) => {
           <li>
             <Link className="nav-link" 
                 onClick={async () => {
-                const response = await fetch("http://localhost:3000/api/consumer-verification", {
+                // const response = await fetch("http://localhost:3000/api/consumer-verification", {
+                const response = await fetch("https://energy-dapp.onrender.com/api/consumer-verification", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
